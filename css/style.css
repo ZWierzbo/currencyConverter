@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *, ::after, ::before {
@@ -8,4 +9,12 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    resize: both;
+    overflow: auto;
 }
+    
