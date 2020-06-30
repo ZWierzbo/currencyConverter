@@ -4,6 +4,7 @@
     border-radius: 5px;
     margin: 20px 0;
     margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.555);
 
 }
 
@@ -22,15 +23,16 @@
 }
 
 .form__field {
-    border: 1px solid #ccc;  
+    border: none;
     padding: 10px;
     max-width: 370px;
     width: 100%;
     border-radius: 5px;
+    
   }
 
 .form__field:invalid {
-    background-color:rgba(192, 200, 222, 0.345);
+    background-color:rgba(176, 189, 224, 0.345);
 }
 
 
