@@ -11,10 +11,9 @@ body {
     font-family: "Montserrat", sans-serif;
     background-image: url(../images/background.jpg);
     background-size: cover;
+    background-attachment: scroll;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    resize: both;
     overflow: auto;
 }
-    

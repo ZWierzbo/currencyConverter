@@ -55,12 +55,13 @@
 .form__paragraph {
     text-align: left;
     font-size: small;
+    font-weight: 900;
 }
 .form__paragraph--result {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    color: salmon;
+    color: rgb(10, 28, 83);
 
 }
     
