@@ -1,6 +1,6 @@
-# Zuzanna Wierzbowska - my page
+# FX Exchange
 
-<img src="images/screenshot.png" alt="screenshot" width="350"/>
+<img src="images/screenshot.png" alt="screenshot" width="500"/>
 
 ## Demo
 
