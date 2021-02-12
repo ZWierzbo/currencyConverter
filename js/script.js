@@ -47,7 +47,7 @@
         resultElement.innerHTML = `${amount.toFixed(2)} ${currency} = <strong> ${result.toFixed(2)} ${currency2}</strong>`;
     }
 
-    const onFormSubmit = () => {
+    const onFormSubmit = (event) => {
 
         event.preventDefault();
 
