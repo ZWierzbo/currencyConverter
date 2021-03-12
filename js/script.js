@@ -1,31 +1,21 @@
 {
-    const rateEUR = 4.42
-    const rateGBP = 4.90
-    const rateUSD = 3.94
-
-
-    const calculatePlnValue = (amount, currency) => {
+    const calculatePlnValue = (amount, currency, rateGBP, rateUSD, rateEUR) => {
         switch (currency) {
             case "PLN":
                 return amount;
 
-
             case "GBP":
                 return amount * rateGBP;
-
 
             case "USD":
                 return amount * rateUSD;
 
-
             case "EUR":
                 return amount * rateEUR;
         }
-
-
     }
 
-    const calculateResult = (plnValue, currency2) => {
+    const calculateResult = (plnValue, currency2, rateGBP, rateUSD, rateEUR) => {
         switch (currency2) {
             case "GBP":
                 return plnValue / rateGBP;
@@ -38,7 +28,6 @@
 
             case "PLN":
                 return plnValue
-
         }
     }
 
@@ -55,18 +44,18 @@
         const fromCurrencyElement = document.querySelector(".js-from")
         const toCurrencyElement = document.querySelector(".js-to")
 
-
         const amount = +amountElement.value;
         const currency = fromCurrencyElement.value;
         const currency2 = toCurrencyElement.value;
 
+        const rateEUR = 4.42
+        const rateGBP = 4.90
+        const rateUSD = 3.94
 
-        const plnValue = calculatePlnValue(amount, currency);
-        const result = calculateResult(plnValue, currency2);
+        const plnValue = calculatePlnValue(amount, currency, rateGBP, rateUSD, rateEUR);
+        const result = calculateResult(plnValue, currency2, rateGBP, rateUSD, rateEUR);
 
         updatedResult(amount, result, currency, currency2);
-
-
     };
 
     const init = () => {
@@ -77,6 +66,5 @@
     };
 
     init();
-
 
 }
